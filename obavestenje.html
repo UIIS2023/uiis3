@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link type="text/css" href="obavestenje.css" rel="stylesheet">
+    <script src="obavestenje.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>Obaveštenje</title>
+
+</head>
+
+<body>
+    <div class="header">
+
+        <p class="headerSadrzaj">Kontakt telefon:<br> <img src="tel.png" class="img">0691531932 </p>
+        <p class="headerSadrzaj" id="naslov"> Zoološki vrt</p>
+        <p class="headerSadrzaj"> Adresa:<br><img src="loc.png" class="img">Majora Gavrilovića 12</p>
+    
+        <div id="navigacioni-meni">
+          <a href="pocetna.html" >Početna</a>
+          <a href="zivotinje.html">Životinje</a>
+          <a href="obavestenje.html" class="active">Obaveštenje</a>
+        </div>
+      </div>
+
+    <div class="stranica">
+
+        <h2>Drago nam je što možemo da Vas obavestimo da ćete kod nas uskoro imati priliku da vidite uživo još jednu
+            životinju. Ovde imate sat koji odbrojava vreme njenog dolaska, tako da tačno znate kada možete da nas
+            posetite.
+            <br>
+            <br>
+            Čekamo Vas!
+        </h2>
+
+        <p id="prikaz" class="sat"></p>
+
+        <script>
+            function vreme() {
+                var tacnoVreme = new Date();
+                var zeljeniDatum = new Date("Jan 30, 2024 15:37:25");
+                var razlika = zeljeniDatum - tacnoVreme;
+                var dani = Math.floor(razlika / (1000 * 60 * 60 * 24)); //1000-1 sekunda*60=1 minut*60=1sat*24=1 dan
+                var sati = Math.floor(razlika % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));//ostatak od dana,/1000-1 sekunda*60=1 minut*60=1sat
+                var minuti = Math.floor(razlika % (1000 * 60 * 60) / (1000 * 60));
+                var sekunde = Math.floor(razlika % (1000 * 60) / 1000);
+
+                document.getElementById("prikaz").innerHTML = dani + " d " + sati + "h "
+                    + minuti + "m " + sekunde + "s ";
+            } setInterval(vreme, 1000);// na sekund se menja vreme
+        </script>
+
+        <h2>A dok čekate, imate priliku da pogodite o kojoj životinji je reč.
+            <br>
+            <br>
+            Srećno!
+        </h2>
+
+        <div class="igra">
+            <h1>Pogodite koja životinja nam se pridružuje</h1>
+            <p>
+                <b>Pomoć:</b>
+                 Crno-bela
+            </p>
+            <p id="linijice"></p>
+            <p>Pogodite slovo:
+                <input type="text" maxlength="1" id="upisiSlovo">
+            </p>
+            <button onclick="pogodiSlovo()">
+                Potvrdi
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="footer">Možete nas kontaktirati i preko drustvenh mreža: </p>
+        <p>
+            <a href="https://www.instagram.com/"><img src="ig.png" class="img"></a>
+            <a href="https://www.facebook.com/"><img src="fb.png" class="img"></a>
+            <a href="https://www.pinterest.com/"><img src="p.png" class="img"></a>
+        </p>
+    </div>
+</body>
+
+</html>

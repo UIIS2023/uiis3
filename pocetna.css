@@ -1,0 +1,176 @@
+body {
+    font-family: Rubik;
+    margin: 20px;
+}
+
+.header {
+    background-color: rgb(96, 108, 56);
+    border-color: rgb(96, 108, 56);
+    box-shadow: 0 4px 8px 0;
+}
+
+#naslov {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+.headerSadrzaj {
+    display: inline-block;
+    color: rgb(221, 161, 94);
+    vertical-align: middle;
+    width: 33%;
+    text-align: center;
+}
+
+#navigacioni-meni {
+    font-size: 25px;
+    background-color: rgb(40, 54, 24);
+    display: flex;
+}
+
+#navigacioni-meni a {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    padding: 7px;
+}
+
+#navigacioni-meni a.active {
+    background-color: white;
+    color: rgb(40, 54, 24);
+}
+
+#navigacioni-meni a:hover {
+    background-color: white;
+    color: rgb(40, 54, 24);
+}
+
+.stranica {
+    background-color: rgb(249, 227, 203);
+    width: 99%;
+    border-color: rgb(249, 227, 203);
+    box-shadow: 0 4px 8px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pozadina {
+    background-image: url("pozadina3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 30vh;
+    height: 70vh;
+}
+
+#ekran {
+    height: 100vh;
+    padding-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(221, 161, 94);
+    margin-bottom: 120px;
+}
+
+.informacije {
+    background-color: rgb(188, 108, 37);
+    border-radius: 50%;
+    height: 260px;
+    width: 260px;
+    vertical-align: middle;
+    padding: 30px;
+    color: white;
+    display: inline-block;
+    margin: 50px;
+    box-shadow: 0px 15px 10px 0px rgb(3, 3, 3,0.5);
+}
+
+#box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    /*razmak izmedju redova*/
+    width: 50%;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: rgba(50, 40, 40, 0.8);
+    color: white;
+}
+
+.pored {
+    display: inline-block;
+    width: 47%;
+    margin: 1%;
+    vertical-align: top;
+}
+
+#mapa {
+    text-align: right;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+fieldset {
+    border-radius: 5px;
+    border-color: rgb(40, 54, 24);
+    color: rgb(96, 108, 56);
+    height: fit-content;
+    line-height: 1.5;
+}
+
+legend {
+    font-weight: bold;
+    color: rgb(40, 54, 24);
+}
+
+#submit {
+    width: 60px;
+    background-color: rgb(40, 54, 24);
+    border-color: rgb(40, 54, 24);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.footer {
+    padding: 5px;
+    border-color: rgb(96, 108, 56);
+    background-color: rgb(96, 108, 56);
+    box-shadow: 0 4px 8px 0;
+    text-align: center;
+}
+
+#footer {
+    color: rgb(221, 161, 94);
+}

@@ -1,0 +1,132 @@
+body {
+    font-family: Rubik;
+    margin: 20px;
+}
+
+.header {
+    background-color: rgb(96, 108, 56);
+    border-color: rgb(96, 108, 56);
+    box-shadow: 0 4px 8px 0;
+}
+
+#naslov {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+.headerSadrzaj {
+    display: inline-block;
+    color: rgb(221, 161, 94);
+    vertical-align: middle;
+    width: 33%;
+    text-align: center;
+}
+
+#navigacioni-meni {
+    font-size: 25px;
+    background-color: rgb(40, 54, 24);
+    display: flex;
+}
+
+#navigacioni-meni a {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    padding: 7px;
+}
+
+#navigacioni-meni a.active {
+    background-color: white;
+    color: rgb(40, 54, 24);
+}
+
+#navigacioni-meni a:hover {
+    background-color: white;
+    color: rgb(40, 54, 24);
+}
+
+.stranica {
+    background-color: rgb(249, 227, 203);
+    width: 99%;
+    border-color: rgb(249, 227, 203);
+    box-shadow: 0 4px 8px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(40, 54, 24);
+    margin: 10px;
+}
+
+.sat {
+    font-size: 50px;
+    color: rgb(188, 108, 37);
+    text-align: center;
+    font-weight: bold;
+}
+
+.igra {
+    display: block;
+    border: 1px solid rgb(188, 108, 37);
+    border-radius: 5px;
+    background-color: white;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    line-height: 2;
+    box-shadow: 0 4px 8px 0;
+}
+
+h1 {
+    color: rgb(188, 108, 37);
+    background-color: rgb(189, 191, 194);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+input {
+    width: 30px;
+}
+
+button {
+    background-color: rgb(188, 108, 37);
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    border-color: rgb(188, 108, 37);
+}
+
+.footer {
+
+    padding: 5px;
+    border-color: rgb(96, 108, 56);
+    background-color: rgb(96, 108, 56);
+    box-shadow: 0 4px 8px 0;
+    text-align: center;
+}
+
+#footer {
+    color: rgb(221, 161, 94);
+}

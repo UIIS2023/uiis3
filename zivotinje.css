@@ -1,0 +1,226 @@
+body {
+    font-family: Rubik;
+    margin: 20px;
+}
+
+.header {
+    background-color: rgb(96, 108, 56);
+    border-color: rgb(96, 108, 56);
+    box-shadow: 0 4px 8px 0;
+}
+
+#naslov {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+.headerSadrzaj {
+    display: inline-block;
+    color: rgb(221, 161, 94);
+    vertical-align: middle;
+    width: 33%;
+    text-align: center;
+}
+
+#navigacioni-meni {
+    font-size: 25px;
+    background-color: rgb(40, 54, 24);
+    display: flex;
+}
+
+#navigacioni-meni a {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    padding: 7px;
+}
+
+#navigacioni-meni a.active {
+    background-color: white;
+    color: rgb(40, 54, 24);
+}
+
+#navigacioni-meni a:hover {
+    background-color: white;
+    color: rgb(40, 54, 24);
+}
+
+.stranica {
+    background-color: rgb(249, 227, 203);
+    width: 99%;
+    border-color: rgb(249, 227, 203);
+    box-shadow: 0 4px 8px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.galerija img {
+    box-shadow: 0 4px 8px 0px #c1c1c1;
+}
+.galerija {
+    /*pravi grid(mesto gde moze vise elemenata da bude razl vel,pravimo nevidljive kolone i redove) ima 8 kol i 8 redova i razmak je 15px*/
+    display: grid;
+    grid-template-columns: repeat(8, 110px);
+    grid-template-rows: repeat(8, 110px);
+    gap: 0px;
+    justify-content: center;
+}
+
+.namestanjeslike{ /*namesta sliku da bude velicine mesta u gridu za nju*/
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.slika-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: 20px;
+}
+
+.slika-2 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 20px;
+}
+
+.slika-3 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: 20px;
+}
+
+.slika-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    margin: 20px;
+}
+
+.slika-5 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    margin: 20px;
+}
+
+.slika-6 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    margin: 20px;
+}
+
+.slika-7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    margin: 20px;
+}
+
+.slika-8 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    margin: 20px;
+}
+
+.slika-9 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    margin: 20px;
+}
+
+.ekran {
+    height: 75vh;
+}
+
+h1 {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    color: rgb(221, 161, 94);
+}
+
+#grad {
+    background: linear-gradient(to right, rgba(125, 141, 74, 0.8), rgba(32, 43, 19, 0.9));
+    padding: 30px;
+}
+
+.p {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    width: 30%;
+    padding: 5px;
+    vertical-align: top;
+    font-style: italic;
+}
+hr{
+    width: 75%;
+    background-color:  rgb(96, 108, 56);
+    height: 1px;
+}
+
+ol {
+    color: rgb(40, 54, 24);
+}
+
+ul {
+    color: rgb(96, 108, 56);
+}
+
+.stanovnici {
+    border: 5px solid rgb(40, 54, 24);
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#recenica {
+    text-align: center;
+    color: rgb(40, 54, 24);
+    font-style: italic;
+}
+
+.footer {
+    padding: 5px;
+    border-color: rgb(96, 108, 56);
+    background-color: rgb(96, 108, 56);
+    box-shadow: 0 4px 8px 0;
+    text-align: center;
+}
+
+#footer {
+    color: rgb(221, 161, 94);
+}
